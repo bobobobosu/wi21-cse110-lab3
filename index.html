@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>title</title>
+    <title>Bo's User Page</title>
     <meta name="test" content="test meta" />
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
   </head>
   <body>
-    <h1>heading</h1>
-    <p>paragraph.</p>
+    <h1>Bo's User Page</h1>
+    <p>This website is inteded to use for CSE110 Lab 2</p>
     <nav class="menu">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#virt-overview">Virutualizatioin Technologies Overview</a>
+        </li>
+        <li><a href="#vms">Full Blown VMs</a></li>
+        <li><a href="#app-c">Application Containers</a></li>
+        <li><a href="#sys-c">System Containers</a></li>
+        <li><a href="#feedback">Feedback</a></li>
       </ul>
     </nav>
     <main>
-      <section>
-        <h1>h1 test</h1>
-        <p>p test</p>
+      <section id="virt-overview">
+        <h1>Virutualizatioin Technologies</h1>
+        <p>
+          As the processing power of computers continiously to improve over the
+          years, virutualization technologies have gained popularity in the
+          industry. Here are some images, audio and videos that have nothing to
+          do with this topic.
+        </p>
         <iframe src="https://www.google.com" title="google"></iframe>
         <audio controls>
           <source src="audio.wav" type="audio/wav" />
@@ -27,28 +38,33 @@
           <source src="video.mp4" type="video/mp4" />
           not supported.
         </video>
-        <article>
-          <h2>h2 test</h2>
+        <article id="vms">
+          <h2>Full Blown VMs</h2>
           <p>
-            <b>bold text</b> is a <i>Lorem ipsum</i> blabla
-            <em>have</em> gggggg<strong>This text is important!</strong> wewef
-            <code>background-color</code> yee
+            <b>Virtual Machines</b> are <i>software</i> that <em>emulates</em>
+            <strong>physical machines</strong>. <br />
+            There are some examples: <br />
+            <code>Hyper-V</code><br />
+            <code>Linux KVM</code><br />
+            <code>Virtualbox</code><br />
+            <code>vmware</code><br />
           </p>
-          <p>My dad has <span style="color: blue">blue</span> eyes.</p>
+          <p>
+            They are not <span style="color: blue">lightweight</span> at all.
+          </p>
           <aside>
-            <h4>h4 test</h4>
+            <h4>Virtual Machines are made possible by hypervisirs</h4>
             <pre>
-                This is a test
-                test test test
+                Type-1 Hypervisor (Bare metal)
+                Type-2 Hypervisor
                 </pre
             >
           </aside>
-          <div class="div">
-            <h2>h2 inside div element</h2>
+          <div class="div" id="app-c">
+            <h2>Application Containers</h2>
             <p>
-              <br />
-              break<br />
-              break
+              Application Containers are lightweight containers intended to
+              provide microservices
             </p>
           </div>
         </article>
@@ -56,15 +72,15 @@
 
       <article>
         <header>
-          <h3>h3 test</h3>
-          <p>ggggg</p>
-          <p><a href="https://www.google.com">Visit google.com!</a></p>
+          <h3>Docker</h3>
+          <p>Docker is a kind of widely used application container</p>
+          <p><a href="https://www.docker.com/">visit docker.com!</a></p>
         </header>
         <hr />
 
         <figure>
           <img src="test.png" alt="test.png" />
-          <figcaption>this is a test</figcaption>
+          <figcaption>this is not docker's logo</figcaption>
         </figure>
         <svg width="100" height="100">
           <circle
@@ -79,93 +95,122 @@
         <picture>
           <source media="(min-width:650px)" srcset="test.png" />
           <source media="(min-width:465px)" srcset="test.png" />
-          <img src="test.png" alt="Flowers" style="width: auto" />
+          <img src="test.png" alt="not docker" style="width: auto" />
         </picture>
         <canvas id="myCanvas"> not supported </canvas>
         <hr />
-
+        <p>Some dockerized apps</p>
         <ul>
-          <li>a</li>
-          <li>b</li>
-          <li>c</li>
+          <li>Apache Server</li>
+          <li>Guacamole (Remote Desktop)</li>
+          <li>MariaDB (Database Engine)</li>
         </ul>
+        <p>How to create docker containers</p>
         <ol>
-          <li>a</li>
-          <li>b</li>
-          <li>c</li>
+          <li>Create Dockerfile</li>
+          <li>Add source code to the directory</li>
+          <li>Docker build</li>
         </ol>
       </article>
-
+      <p>Login you DockerHub account here</p>
       <form action="/action_page.php" method="get">
-        <label for="2">1</label>
+        <label for="2">Username</label>
         <input type="text" id="2" name="2" /><br /><br />
-        <label for="3">2</label>
+        <label for="3">Password</label>
         <input type="text" id="3" name="3" /><br /><br />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Login" />
       </form>
 
-      <label for="abc">Choose:</label>
+      <label for="abc">Enter your repository:</label>
       <select name="abc" id="abc">
-        <optgroup label="ab">
-          <option value="a">a</option>
-          <option value="b">b</option>
+        <optgroup label="A or B">
+          <option value="a">repo A</option>
+          <option value="b">repo B</option>
         </optgroup>
-        <optgroup label="bc">
-          <option value="b">b</option>
-          <option value="c">c</option>
-        </optgroup></select
-      >]
+        <optgroup label="C or D">
+          <option value="c">repo C</option>
+          <option value="d">repo D</option>
+        </optgroup>
+      </select>
       <form action="/action_page.php">
         <fieldset>
-          <legend>abc:</legend>
-          <label for="a">a</label>
+          <legend>Your credit card details</legend>
+          <label for="a">Number</label>
           <input type="text" id="a" name="a" /><br /><br />
-          <label for="b">b</label>
+          <label for="b">Zip code</label>
           <input type="text" id="b" name="b" /><br /><br />
-          <label for="c">c</label>
+          <label for="c">CVV</label>
           <input type="text" id="c" name="c" /><br /><br />
-          <label for="d">d:</label>
+          <label for="d">Expiration Date</label>
           <input type="date" id="d" name="d" /><br /><br />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Pay $1000 to Bo" />
         </fieldset>
       </form>
+      <h2 id="sys-c">System Containers</h2>
+      <p>Tell me who you are so I can introduce you System Containers</p>
       <form action="/action_page.php">
-        <label for="test">First name:</label>
-        <input type="text" id="test" name="tt" /><br /><br />
-        <label for="test2">Last name:</label>
-        <input type="text" id="test2" name="t" /><br /><br />
-        <input type="submit" value="Submit" />
-        <input type="checkbox" value="Submit" />
-        <input type="email" value="Submit" />
-        <input type="hidden" value="Submit" />
-        <input type="image" alt="123" />
-        <input type="month" value="2021-01" />
-        <input type="number" value="4" />
-        <input type="password" value="Submit" />
-        <input type="radio" value="Submit" />
-        <input type="range" value="5" />
-        <input type="reset" value="Submit" />
-        <input type="search" value="Submit" />
-        <input type="submit" value="Submit" />
+        <fieldset>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="tt" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="t" /><br /><br />
+          <label for="spam">This is not spam</label>
+          <input type="checkbox" id="spam" value="" /><br /><br />
+          <label for="email">Email: </label>
+          <input type="email" id="email" value="@gmail.com" /><br /><br />
+          <label for="passowrd">Email Password: </label>
+          <input type="password" id="passowrd" value="" /><br /><br />
+          <label for="url">Personal: </label>
+          <input type="url" name="url" id="url"></p>
+          <label for="nothing">Nothing here: </label>
+          <input type="hidden" id="nothing" value="Submit" /><br /><br />
+          <label for="dob">Date of Birth: </label>
+          <input type="month" id="dob" value="1999-01" /><br /><br />
+          <label for="phone">Phone: </label>
+          <input type="number" id="phone" value="" /><br /><br />
+          <label for="gender">Gender: </label><br />
+          <input type="radio" id="gender" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label><br />
+          <label for="pin">The length of your bank accout pin: </label>
+          <input type="range" id="pin" value="6" /><br /><br />
+          <input type="submit" id="submit" value="Call Bo Now" />
+          <input type="reset" /><br /><br />
+        </fieldset>
       </form>
+      <br /><br />
       <textarea id="w3review" name="w3review" rows="4" cols="50">
-        testing textarea
+Write about how you feel after talking to Bo
         </textarea
-      >
-      <datalist id="abcde">
-        <option value="a"></option>
-        <option value="b"></option>
-        <option value="c"></option>
-        <option value="d"></option>
-        <option value="e"></option>
-      </datalist>
+      ><br /><br />
 
-      <select name="abcd" id="abcd">
-        <option value="a">a</option>
-        <option value="b">b</option>
-        <option value="c">c</option>
-        <option value="d">d</option>
+      <h1 id="feedback">Feedback</h1>
+      <p>Which one do you like the most</p>
+
+      <form action="/action_page.php">
+        <input list="virtualization technologies">
+        <datalist id="virt">
+          <option value="VM">
+          <option value="Docker">
+          <option value="Hyper-V">
+          <option value="KVM">
+          <option value="VMawre">
+        </datalist>
+      </form>
+
+      <label for="feedback">Which one do you like the most</label>
+      <select id="feedback" name="feedback">
+        <option value="VM">VM</option>
+        <option value="Docker">Docker</option>
+        <option value="Hyper-V">Hyper-V</option>
+        <option value="KVM">KVM</option>
+        <option value="VMawre">VMawre</option>
       </select>
+      
+      <p>This is simple table</p>
       <table>
         <tr>
           <th>t1</th>
@@ -176,19 +221,9 @@
           <td>t4</td>
         </tr>
       </table>
-      <table>
-        <caption>
-          table
-        </caption>
-        <tr>
-          <th>t1</th>
-          <th>t2</th>
-        </tr>
-        <tr>
-          <td>t3</td>
-          <td>t4</td>
-        </tr>
-      </table>
+      <br /><br />
+
+      <p>This is simple table with caption</p>
       <table>
         <caption>
           table
@@ -202,6 +237,9 @@
           <td>t4</td>
         </tr>
       </table>
+      <br /><br />
+
+      <p>This is table with colors</p>
       <table>
         <colgroup>
           <col span="2" style="background-color: red" />
@@ -219,12 +257,16 @@
         </tr>
       </table>
 
+      <br /><br />
       <details>
         <summary>details</summary>
-        <p>aaaaaaaaaaaaaaa</p>
+        <p>this is so detailed, awesome!</p>
       </details>
-      <button onclick="showContent()">hidden content</button>
+
+      <br /><br />
+      <button onclick="showContent()">click this 100000 times to crash your browser</button>
     </main>
+
     <template>
       <h2>test</h2>
       <img src="test.png" width="214" height="204" />
@@ -244,7 +286,7 @@
     </script>
 
     <footer>
-      <p>Author: Bo</p>
+      <p>Author: Bo THIS PAGE IS FOR CSE110 LAB2</p>
       <p><a href="mailto:???.com">bo@???.com</a></p>
     </footer>
   </body>
