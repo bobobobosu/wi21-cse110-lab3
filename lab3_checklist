@@ -1,18 +1,18 @@
-Selectors
+-Selectors
 
-Class Selector (.class)
-ID Selector (#id)
-Universal Selector (*)
-Element Selector (element)
-Attribute Selector (e.g. [attribute=foo])
-Pseudo-class Selectors (e.g. p::hover)
-Grouping / Combinators
-Selector List (element, element)
-Descendant Combinator (element element)
-Child Combinator (element > element)
-General sibling combinator (element ~ element)
-Adjacent sibling combinator (element + element)
-Combining Two Selectors (element.class)
+-Class Selector (.class)
+-ID Selector (#id)
+-Universal Selector (*)
+-Element Selector (element)
+-Attribute Selector (e.g. [attribute=foo])
+-Pseudo-class Selectors (e.g. p::hover)
+-Grouping / Combinators
+-Selector List (element, element)
+-Descendant Combinator (element element)
+-Child Combinator (element > element)
+-General sibling combinator (element ~ element)
+-Adjacent sibling combinator (element + element)
+-Combining Two Selectors (element.class)
 
 CSS Topics:
 
