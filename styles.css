@@ -123,4 +123,21 @@ body:active {
 }
 .griditem{
   background-color: rgba(78, 54, 54, 0.8);
+  justify-self: start;
+}
+
+body {
+  background-color: rgb(6, 9, 10);
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    background-color: rgb(136, 163, 136);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: rgb(82, 82, 168);
+  }
 }
