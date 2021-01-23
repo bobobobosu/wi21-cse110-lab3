@@ -118,12 +118,16 @@ body:active {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 15% auto 15%;
   grid-template-rows: auto auto;
+  background-color: #ebd9d9;
+  padding: 15px;
 }
-.griditem{
-  background-color: rgba(78, 54, 54, 0.8);
-  justify-self: start;
+.griditem {
+  background-color: rgba(192, 161, 161, 0.8);
+  justify-self: center;
+  text-align: left;
+  font-size: 30px;
 }
 
 body {
