@@ -1,16 +1,24 @@
 body {
   background-color: lightgray;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 80%;
+  min-width: 50%;
+  position: sticky;
 }
 
 h1, h2 {
   color: navy;
   margin-left: 10px;
+  text-decoration: underline;
+  position: relative;
 }
 
 main {
   margin: 0;
   padding: 5px;
   background-color: lightgray;
+  text-align: left;
+  position: absolute;
 }
 
 main > h1,
@@ -43,26 +51,93 @@ p {
   background-color: rgb(216, 216, 216);
 }
 p {
-  background-color: rgb(182, 182, 165);
+  background-color: hsl(27, 5%, 57%);
 }
 form[action="/action_page.php"] {
-  background-color: rgb(90, 90, 66);
+  background-color: #FFF;
 }
 button:hover {
   color: blue;
 }
 ul li{
-  background-color: rgb(136, 24, 24);
+  background-color: #dbc3c3;
 }
 ol li{
-  background-color: rgb(88, 58, 58);
+  background-color:hsla(0, 100%, 0%, 0.8);
 }
 p ~ span{
-  background-color: rgb(116, 91, 91);
+  background-color: lightblue;
 }
 h2 + p{
   background-color: rgb(131, 127, 127);
 }
 div.div{
-  background-color: rgb(92, 99, 204);
+  background-color: rgba(92, 99, 204, 0.5);
+}
+
+div {
+  height: 100px;
+  padding: 10px;
+  border: 5px solid rgb(68, 70, 204);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display : inline-block;
+}
+
+figure {
+  width: 500px;
+  padding: 10px;
+  border: 5px solid rgb(224, 32, 74);
+  margin: auto auto auto auto;
+  padding: 3px 3px 3px 3px;
+  display: inline;
+}
+div:hover {
+  color: #FF00FF;
+}
+body:active {
+  color: #63aa11;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.item{
+  align-self:flex;
+  line-height: 30px;
+  flex: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+.griditem{
+  background-color: rgba(78, 54, 54, 0.8);
+  justify-self: start;
+}
+
+body {
+  background-color: rgb(6, 9, 10);
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    background-color: rgb(136, 163, 136);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: rgb(82, 82, 168);
+  }
 }
